@@ -1,0 +1,12 @@
+QC CCESD — Bulletin Attribution Update
+
+This package adds an Admin District Bulletins audit display:
+- Uploaded by: the admin who first created the bulletin.
+- Last edited by: the admin who most recently saved, published, or changed its status.
+
+BACKEND REQUIRED:
+Replace the deployed Google Apps Script Code.gs with:
+Code_FIXED_bulletin_attribution.gs
+Then create/update the Web App deployment and authorize if prompted.
+
+Existing bulletins are preserved. Older bulletins created before this update may show — for attribution until they are edited/saved.

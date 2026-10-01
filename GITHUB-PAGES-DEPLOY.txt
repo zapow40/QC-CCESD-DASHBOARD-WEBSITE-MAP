@@ -1,0 +1,7 @@
+GITHUB PAGES DEPLOYMENT
+
+Upload/extract the CONTENTS of this folder into the publishing root of the main branch (or the configured /docs folder). Do not upload this ZIP as a file and do not nest the files inside another folder. index.html must be directly in the published root.
+
+Repository Settings > Pages must publish from the same branch/folder where index.html and 404.html are located. If the entire site root returns 404, check Settings > Pages and the latest Actions deployment; a 404.html cannot fix a deployment whose publishing source is not configured correctly.
+
+This bundle contains only the compiled frontend (no editable source tree or Google Apps Script backend). The pending account label is corrected in the UI. To guarantee that newly registered accounts are not granted admin privileges before approval, the Google Apps Script backend must also create them with pending status and only set role=admin on approval.
