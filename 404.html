@@ -1,18 +1,11 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CCESD</title>
-<script>
-(function () {
-  var parts = location.pathname.split('/').filter(Boolean);
-  var base = parts.length ? '/' + parts[0] + '/' : '/';
-  var rest = parts.slice(1).join('/');
-  var target = base + (rest ? '?route=/' + encodeURIComponent(rest) : '');
-  location.replace(target + (location.hash || ''));
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CCESD</title></head><body><script>
+(function(){
+  var project="/QC-CCESD-DASHBOARD-WEBSITE-MAP";
+  var path=location.pathname;
+  var base=path.indexOf(project)===0?project:"";
+  var rest=base?path.slice(base.length):path;
+  if(rest==="/"||rest==="") location.replace(base+"/");
+  else location.replace(base+"/?route="+encodeURIComponent(rest)+(location.search||"")+(location.hash||""));
 })();
-</script>
-</head>
-<body><p>Opening CCESD…</p></body>
-</html>
+</script><p>Opening CCESD…</p></body></html>
