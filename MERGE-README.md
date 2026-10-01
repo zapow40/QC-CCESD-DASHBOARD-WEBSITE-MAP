@@ -39,3 +39,6 @@ The frontend API endpoint is configured to use the requested deployment:
 `https://script.google.com/macros/s/AKfycbzL2BR9rmhdBESZS1SA1hYCVV43gMtV3fX8Ql4EcDoi_BENdODMDu7tDUn5WQC3ZoIBpA/exec`
 
 If this deployment is replaced in Google Apps Script, update the `kv` constant in the compiled JavaScript accordingly.
+
+
+Upload fix: district bulletin map image uploads now send the backend-required `dataBase64` field. The Apps Script upload handler already expects `dataBase64`.
