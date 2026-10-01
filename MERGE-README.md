@@ -42,3 +42,5 @@ If this deployment is replaced in Google Apps Script, update the `kv` constant i
 
 
 Upload fix: district bulletin map image uploads now send the backend-required `dataBase64` field. The Apps Script upload handler already expects `dataBase64`.
+
+Bulletin publish fix: new bulletins now use the ID returned directly by bulletin.save, then call bulletin.publish when Publish to Public Site is selected.
