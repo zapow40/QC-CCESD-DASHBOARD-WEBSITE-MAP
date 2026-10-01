@@ -36,7 +36,7 @@ This is a production-build merge because the uploaded websites contain compiled/
 
 ## Google Apps Script Web App
 The frontend API endpoint is configured to use the requested deployment:
-`https://script.google.com/macros/s/AKfycbzL2BR9rmhdBESZS1SA1hYCVV43gMtV3fX8Ql4EcDoi_BENdODMDu7tDUn5WQC3ZoIBpA/exec`
+
 
 If this deployment is replaced in Google Apps Script, update the `kv` constant in the compiled JavaScript accordingly.
 
