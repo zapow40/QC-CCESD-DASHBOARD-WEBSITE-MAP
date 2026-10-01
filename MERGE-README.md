@@ -32,3 +32,10 @@ The static site remains suitable for GitHub Pages. Keep the repository base-path
 
 ## Important
 This is a production-build merge because the uploaded websites contain compiled/minified JavaScript rather than the original source tree. The feature application bundle is retained intact so the new sensor-map functionality is not accidentally broken by manual reconstruction.
+
+
+## Google Apps Script Web App
+The frontend API endpoint is configured to use the requested deployment:
+`https://script.google.com/macros/s/AKfycbzL2BR9rmhdBESZS1SA1hYCVV43gMtV3fX8Ql4EcDoi_BENdODMDu7tDUn5WQC3ZoIBpA/exec`
+
+If this deployment is replaced in Google Apps Script, update the `kv` constant in the compiled JavaScript accordingly.
