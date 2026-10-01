@@ -4,7 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CCESD</title>
-<script>location.replace("/QC-CCESD-DASHBOARD-WEBSITE/" + location.search + location.hash);</script>
+<script>
+(function () {
+  var parts = location.pathname.split('/').filter(Boolean);
+  var base = parts.length ? '/' + parts[0] + '/' : '/';
+  var rest = parts.slice(1).join('/');
+  var target = base + (rest ? '?route=/' + encodeURIComponent(rest) : '');
+  location.replace(target + (location.hash || ''));
+})();
+</script>
 </head>
 <body><p>Opening CCESD…</p></body>
 </html>
